@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#ffffff</color>
+    <color name="white_bg">#c6ffffff</color>
+    <!--login登陆-->
+    <color name="login_font_input">#fefeff</color>
+
+    <!--settings设置-->
+    <color name="setttings_background">#e5e5e5</color>
+    <!--hisorybill历史账单-->
+    <color name="histbill_secondtitle">#e5e5e5</color>
+
+    <color name="login_bg">#373b47</color>
+
+    <!--刷卡-->
+    <!-- 刷卡界面 -->
+    <color name="title_background">#e8392d</color>
+    <color name="bg_unoin">#e0dedf</color>
+    <color name="bg_unoin_font">#9b9ca2</color>
+    <!-- 刷卡输入密码界面按钮(bottom左右两个) -->
+    <color name="bg_unoin_btn">#cacaca</color>
+    <!-- 金额显示区域和文字颜色 -->
+    <color name="font_color">#373b47</color>
+    <!-- 金额输入界面字体颜色 -->
+    <color name="btn_bordor_line">#cccccc</color>
+    <!-- 按钮按下去的颜色 -->
+    <color name="bg_btn_press">#efe0e3ed</color>
+    <color name="bg_btn_press2">#affdfdfe</color>
+    <!-- 背景色  二维界面的“交易金额” -->
+    <color name="bg_cash_all">#2f323b</color>
+    <color name="union_white">#eeeeee</color>
+    <!-- 支付类型背景色和按下颜色 -->
+    <color name="home_red">#ec594e</color>
+    <color name="home_red2">#9aec594e</color>
+    <color name="red_black">#ffcc0000</color>
+    <color name="bg_cash_union">#f9c924</color>
+    <color name="bg_press_cash_union">#d9a73d</color>
+    <color name="bg_cash_weixin">#51e239</color>
+    <color name="bg_press_cash_weixin">#6dd25c</color>
+    <color name="bg_cash_alipay">#2fb9f7</color>
+    <color name="bg_press_cash_alipay">#3ba6d6</color>
+    <color name="bg_cash_cashpay">#ade122</color>
+    <color name="bg_press_cash_cashpay">#9fc930</color>
+    <color name="bg_cash_setting">#21f1b9</color>
+    <color name="bg_press_cash_setting">#25d4a5</color>
+<!--capture二维码扫描-->
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="viewfinder_mask1">#1e000000</color>
+    <color name="possible_result_points">#c0ffff00</color>
+
+    <!--home主界面-->
+    <color name="text_home_title">#eeeeee</color>
+    <!--pay支付-->
+    <color name="pay_bg">#eeeeee</color>
+    <color name="white_light">#e5e5e5</color>
+    <color name="pay_alipay_bg">#e8392d</color>
+    <color name="pay_weixin_bg">#e8392d</color>
+
+
+    <color name="blue">#37a7e9</color>
+    <color name="blue_pressed">#3094cf</color>
+    <color name="grey">#CFCFCF</color>
+    <color name="grey_dark">#B5B5B5</color>
+
+
+    <color name="bg_weixin">#72e172</color>
+    <color name="bg_weixin_back">#72d290</color>
+    <color name="bg_alipay">#67b6f3</color>
+    <color name="bg_alipay_bg">#67c0f3</color>
+    <color name="bg_baidu">#F37067</color>
+    <color name="pay_baidu_bg">#fc6367</color>
+    <color name="pay_yizf_bg">#D65645</color>
+    <color name="pay_union_bg">#D65645</color>
+    <color name="bg_yzf1">#a07e17</color>
+    <color name="bg_yzf">#D98719</color>
+    <color name="pay_yzf_bg">#d97919</color>
+    <color name="darker_gray">#aaa</color>
+
+    <color name="my_bg">#ebebeb</color>
+    <color name="my_text_1">#666666</color>
+    <color name="my_text_2">#999999</color>
+    <color name="my_layout_unpress">#f2f2f2</color>
+    <color name="my_layout_press">#e2e2e2</color>
+
+    <color name="stroke">#cac7c7</color>
+    <color name="blue_text">#0c91f7</color>
+    <color name="gray_text">#909497</color>
+    <color name="gray_text2">#bcbabfc2</color>
+    <color name="black">#000000</color>
+    <color name="wave_bg1">#f8786a</color>
+    <color name="wave_bg2">#f27062</color>
+    <color name="whites">#FFFFFF</color>
+    <color name="pos">#4178a9</color>
+
+    <color name="lineChart_bg">#f8786a</color>
+    <color name="login_text">#cccccc</color>
+    <color name="linechart">#ff9900</color>
+    <color name="center">#999999</color>
+
+
+    <!--扫码-->
+    <color name="text_scan_amount">#f5f5f5</color>
+    <!--登录-->
+    <color name="text_login_register">#ffdad3</color>
+    <color name="text_login_bottom">#666666</color>
+    <!--主界面-->
+    <color name="home_line_color">#e1e1e1</color>
+    <color name="main_text_each_amount">#f3d8cd</color>
+    <color name="analyse_month_amount">#999999</color>
+    <color name="analyse_text_paytype">#ff7069</color>
+
+
+    <color name="qrcode_text_bg_alipay">#f0f9fe</color>
+    <color name="qrcode_text_bg_weixin">#f1f9ef</color>
+    <color name="qrcode_text_bg_yzf">#fdf7eb</color>
+    <color name="qrcode_text_bg_bg">#fef2f2</color>
+    <color name="qrcode_text_amount_alipay">#67a6f3</color>
+    <color name="qrcode_text_amount_weichat">#4aad4a</color>
+    <color name="qrcode_text_amount_yzf">#e99634</color>
+    <color name="qrcode_text_amount_bd">#f37068</color>
+
+    <color name="capture_text">#ffffff</color>
+    <color name="capture_amount">#ff946e</color>
+    <color name="capture_amount_show">#979797</color>
+
+    <color name="statusBar">#ff6067</color>
+    <!--<color name="statusBar">#ff7e6b</color>-->
+    <color name="statusBar2">#ff7560</color>
+    <color name="statusBar_bg">#cadeb9c8</color>
+
+
+    <color name="analyse_shadow">#ffddd3</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD4A2E</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <!--shift-->
+    <color name="shift_bg">#f3f4f5</color>
+    <color name="shift_amount_success">#f37067</color>
+    <color name="shift_item_top_text">#333333</color>
+    <color name="shift_item_bottom_text">#999999</color>
+    <color name="shift_bottom_bg">#fdfdfe</color>
+    <color name="shift_detail_text">#666666</color>
+
+
+    <color name="bg_group_item_normal_pressed_state">#ff99cc99</color>
+    <color name="bg_group_item_expanded_state">#ff88dd88</color>
+    <color name="bg_group_item_normal_state">#ffddffdd</color>
+    <color name="bg_group_item_expanded_pressed_state">#ff99cc99</color>
+    <color name="bg_item_normal_state">#fff0f0f0</color>
+
+
+
+    <color name="itemDocrationColor">#b8baba</color>
+
+
+</resources>

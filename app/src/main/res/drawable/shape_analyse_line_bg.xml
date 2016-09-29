@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <size android:width="100dp"
+          android:height="50dp"
+          ></size>
+    <corners
+             android:radius="6dp"
+             ></corners>
+    <solid android:color="@color/text_scan_amount"></solid>
+</shape>

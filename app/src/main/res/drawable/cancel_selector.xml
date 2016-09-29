@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@color/grey_dark" android:state_pressed="true">
+        <shape android:innerRadius="5dp"/>
+    </item>
+    <item android:drawable="@color/grey_dark" android:state_focused="true">
+        <shape android:innerRadius="5dp"/>
+    </item>
+    <item android:drawable="@color/grey">
+        <shape android:innerRadius="5dp"/>
+    </item>
+
+</selector>

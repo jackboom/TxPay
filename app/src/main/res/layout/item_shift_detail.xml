@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:background="@color/white_light"
+    android:layout_height="match_parent">
+    <!--<TextView-->
+        <!--android:background="@color/viewfinder_mask"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/view_padding0.5" />-->
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_marginTop="@dimen/view_padding1"
+        android:layout_marginBottom="@dimen/view_padding1"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/view_padding20"
+        android:layout_height="@dimen/view_padding55"
+        android:padding="@dimen/view_padding10"
+        android:layout_width="match_parent"
+        >
+
+        <TextView
+            style="@style/shift_text"
+            android:id="@+id/tv_shift_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交班人" />
+
+        <TextView
+            style="@style/shift_text"
+            android:id="@+id/tv_shift_detail_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="1232121521" />
+    </RelativeLayout>
+    <!--<TextView-->
+        <!--android:background="@color/viewfinder_mask"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/view_padding0.5" />-->
+</LinearLayout>

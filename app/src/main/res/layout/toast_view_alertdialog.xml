@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/toast_alert_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_padding15"
+        android:layout_marginRight="@dimen/view_padding15"
+        android:layout_marginTop="@dimen/view_padding15"
+        android:gravity="center"
+        android:textSize="@dimen/view_padding18"
+        android:textStyle="bold" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_padding15"
+        android:layout_marginRight="@dimen/view_padding15"
+        android:layout_marginTop="@dimen/view_padding15"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/view_padding18" />
+    <ImageView
+        android:layout_marginTop="@dimen/view_padding7"
+        android:id="@+id/dialog_marTop"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alertdialog_line" />
+
+    <EditText
+        android:focusable="true"
+        android:background="@null"
+        android:id="@+id/edittxt_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_padding7"
+        android:layout_marginRight="@dimen/view_padding7"
+        android:layout_marginTop="@dimen/view_padding7"
+        android:gravity="center"
+        android:hint="请输入收款单位名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/view_padding18" />
+
+    <LinearLayout
+        android:id="@+id/dialog_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_padding10"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="@dimen/view_padding7"
+        android:id="@+id/dialog_marBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/alertdialog_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <!--<RelativeLayout-->
+            <!--android:visibility="gone"-->
+            <!--android:id="@+id/rl_submit"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<Button-->
+                <!--android:padding="@dimen/view_padding10"-->
+                <!--android:id="@+id/btn_submit"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/view_padding40"-->
+                <!--android:background="@drawable/alertdialog_left_selector"-->
+                <!--android:gravity="center"-->
+                <!--android:textColor="@color/statusBar"-->
+                <!--android:textSize="@dimen/view_padding18" />-->
+        <!--</RelativeLayout>-->
+
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_padding40"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_left_selector"
+            android:gravity="center"
+            android:textColor="@color/statusBar"
+            android:textSize="@dimen/view_padding18" />
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="1px"
+            android:layout_height="@dimen/view_padding40"
+            android:background="@color/alertdialog_line" />
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/view_padding40"
+            android:layout_weight="1"
+            android:background="@drawable/alertdialog_right_selector"
+            android:gravity="center"
+            android:textColor="@color/statusBar"
+            android:textSize="@dimen/view_padding18"
+           />
+    </LinearLayout>
+
+</LinearLayout>

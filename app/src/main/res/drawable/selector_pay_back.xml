@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/pay_icon_back" android:state_pressed="true">
+        <color android:color="@color/analyse_month_amount"></color>
+    </item>
+    <item android:drawable="@drawable/pay_icon_back"  android:state_selected="true">
+        <color android:color="@color/analyse_month_amount"></color>
+    </item>
+    <item android:drawable="@drawable/pay_icon_back" android:state_checked="true">
+        <color android:color="@color/analyse_month_amount"></color>
+    </item>
+    <item android:drawable="@drawable/pay_icon_back"></item>
+</selector>

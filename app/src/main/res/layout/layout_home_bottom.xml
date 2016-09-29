@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center_vertical"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_weight="1"
+            android:clickable="true"
+            android:id="@+id/iv_home_collection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_collection_press"/>
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/iv_home_account"
+            android:layout_toRightOf="@id/iv_home_collection"
+            android:clickable="true"
+            android:src="@drawable/home_account_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/iv_home_allScan"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:src="@drawable/home_scan_normal"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/iv_home_allScan"
+            android:clickable="true"
+            android:id="@+id/iv_home_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_message_normal"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/iv_home_myself"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/home_mine_normal"/>
+    </LinearLayout>
+</LinearLayout>

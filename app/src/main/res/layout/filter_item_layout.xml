@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/ll_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+            android:id="@+id/checkbox_dealing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订单处理中"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_deal_success"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付成功"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_deal_fail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付失败"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_unDeal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="未支付"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View style="@style/stroke1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_weixin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="微信"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_weialipay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="支付宝"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_bdqb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="百度钱包"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_yinlian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="银联"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:textSize="16sp"
+
+            android:id="@+id/checkbox_yzf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="翼支付"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <Button
+
+            android:id="@+id/btn_bill_time"
+            android:layout_width="85dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/selector_my_rlayout"
+            android:text="选择日期"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/btn_bill_time"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="14sp"
+            android:background="@drawable/selector_my_rlayout"
+            android:text="确定"/>
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="5dp">
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

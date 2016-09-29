@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:clickable="true"
+            android:layout_width="50dp"
+            android:id="@+id/iv_capture_back"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pay_icon_back"
+            />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/capture_text"
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/iv_capture_back"
+            android:text="@string/text_home_collections"
+            android:textSize="25sp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

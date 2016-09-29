@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_light"
+    tools:context="com.jszf.txsystem.activity.ShiftDetailActivity">
+    <RelativeLayout
+        android:layout_weight="0"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:background="@color/statusBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45">
+        <ImageView
+            android:background="@drawable/selector_bg_back"
+            android:paddingLeft="@dimen/view_padding10"
+            android:paddingRight="@dimen/view_padding10"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_shift_detail_back"
+            android:clickable="true"
+            android:src="@drawable/pay_icon_back"
+            android:layout_width="@dimen/view_padding45"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/view_padding25"
+            style="@style/home_text1"
+            android:text="交班详情"
+            />
+    </RelativeLayout>
+    <com.jszf.txsystem.ui.FlexibleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_shift_detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+    </com.jszf.txsystem.ui.FlexibleScrollView>
+
+</LinearLayout>

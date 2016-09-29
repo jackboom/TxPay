@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_myself_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45"
+        android:layout_alignParentTop="true"
+        android:layout_weight="0"
+        android:background="@color/statusBar"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/iv_pay_back"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/text_home_title"
+            android:textSize="@dimen/view_padding25"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_quit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0.5dp"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_myself_quit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/count_view_btn"
+            android:text="安全退出"
+            android:textColor="@color/pay_alipay_bg"
+            android:textSize="@dimen/view_padding20"/>
+    </LinearLayout>
+
+    <com.jszf.txsystem.ui.CustomLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_quit"
+        android:layout_below="@id/ll_myself_title"
+        android:layout_weight="1"
+        android:background="@color/white_light"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/layout_mylayout"
+                android:layout_marginTop="@dimen/view_padding20"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:focusable="false"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding30"
+                >
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_merchanno"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv1"
+                    android:text="商户号"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myself_merchanno"
+                    style="@style/myself_text1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:focusable="false"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding30"
+                >
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_limit"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv2"
+                    android:text="商户权限"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myself_limit"
+                    style="@style/myself_text1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/view_padding16"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_remain"
+                style="@style/layout_mylayout"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_remain"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv3"
+                    android:text="账户余额"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_search"
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_search"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv4"
+                    android:text="到账查询"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_card"
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_card"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv5"
+                    android:text="银行卡"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_rate"
+
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_rate"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv6"
+                    android:text="周期与费率"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_bluetooth"
+
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/icon_bluetooth"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv12"
+                    android:text="蓝牙设置"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_print"
+                style="@style/layout_mylayout"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/myself_icon_print"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv13"
+                    android:text="打印机设置"
+                    />
+
+                <ImageView
+                    style="@style/layout_common2"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/account_icon_direct"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_myself_tel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding30"
+                >
+
+                <ImageView
+                    android:id="@+id/iv7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.6"
+                    android:scaleY="0.6"
+                    android:src="@drawable/find_iv_tel"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv7"
+                    android:text="绑定手机号"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_myself_phoneno"
+                    style="@style/myself_text1"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_mysellf_about"
+                style="@style/layout_mylayout"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_padding20"
+                android:layout_marginTop="0.5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:paddingLeft="@dimen/view_padding5"
+                android:paddingRight="@dimen/view_padding15"
+                >
+
+                <ImageView
+                    android:id="@+id/iv9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleX="0.5"
+                    android:scaleY="0.5"
+                    android:src="@drawable/reset_icon_cerification"/>
+
+                <TextView
+                    style="@style/myself_text1"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv9"
+                    android:text="关于同兴支付"
+                    />
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </com.jszf.txsystem.ui.CustomLinearLayout>
+</RelativeLayout>

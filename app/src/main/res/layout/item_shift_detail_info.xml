@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_head_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding35"
+        android:background="@drawable/bg_shift_item_divider"
+        android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_shift"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_padding35"
+            android:layout_below="@id/tv_head_indicator"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/view_padding10">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/view_padding100"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_shift_type"
+                    android:layout_width="@dimen/view_padding12.5"
+                    android:layout_height="@dimen/view_padding12.5"
+                    android:src="@drawable/icon_shift_all" />
+
+                <TextView
+                    android:id="@+id/tv_shift_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_padding8"
+                    android:text="总订单打"
+                    android:textColor="@color/shift_detail_text"
+                    android:textSize="@dimen/view_padding12.5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/view_padding115"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="金额："
+                    android:textColor="@color/shift_detail_text"
+                    android:textSize="@dimen/view_padding12.5" />
+
+                <TextView
+                    android:id="@+id/tv_shift_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="¥2354343534"
+                    android:textColor="@color/shift_detail_text"
+                    android:textSize="@dimen/view_padding12.5" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/view_padding5"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="交易笔数："
+                    android:textColor="@color/shift_detail_text"
+                    android:textSize="@dimen/view_padding12.5" />
+
+                <TextView
+                    android:id="@+id/tv_shift_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="104356f3323笔"
+                    android:textColor="@color/shift_detail_text"
+                    android:textSize="@dimen/view_padding12.5" />
+            </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_below="@+id/ll_shift"
+        android:orientation="vertical"
+        android:id="@+id/ll_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding20"
+        android:background="@color/shift_bg"></LinearLayout>
+</RelativeLayout>

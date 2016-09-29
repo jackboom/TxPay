@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/analyse_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/analyse_rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_padding58"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_bg">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_analyse_rect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_padding15"
+                    android:layout_marginLeft="@dimen/view_padding23.5"
+                    android:src="@drawable/analyse_icon_rect" />
+
+                <com.jszf.txsystem.view.CustomTextView
+                    android:id="@+id/tv_show_timeslot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/view_padding15"
+                    android:layout_marginLeft="@dimen/view_padding10"
+                    android:layout_marginTop="@dimen/view_padding30"
+                    android:layout_toRightOf="@id/iv_analyse_rect"
+                    android:textSize="@dimen/view_padding15" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="@dimen/view_padding15"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <com.jszf.txsystem.view.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月总收款 "
+                    android:textSize="@dimen/view_padding15" />
+
+                <com.jszf.txsystem.view.CustomTextView
+                    android:id="@+id/tv_month_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/view_padding27"
+                    android:textSize="@dimen/view_padding15" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_analyse_back"
+                android:layout_width="@dimen/view_padding45"
+                android:layout_height="@dimen/view_padding45"
+                android:src="@drawable/pay_icon_back" />
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_show_date"
+                style="@style/home_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/view_padding20" />
+
+            <ImageView
+                android:id="@+id/iv_analyse_more"
+                android:layout_width="88px"
+                android:layout_height="88px"
+                android:layout_alignParentRight="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/analyse_more" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/analyse_text_damount"
+            style="@style/home_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"
+            android:text="日收款(单位:K元)"
+            android:textSize="30px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/analyse_text_damount"
+            android:layout_marginBottom="116px"
+            android:layout_marginTop="20px"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_whole_touch"
+                android:layout_width="match_parent"
+                android:layout_height="466px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv111"
+                    android:layout_width="@dimen/view_padding7"
+                    android:layout_height="@dimen/view_padding197.5"
+                    android:layout_marginTop="@dimen/view_padding18"
+                    android:background="@drawable/shape_analyse_left_rectangle" />
+
+                <TextView
+                    android:id="@+id/tv222"
+                    android:layout_width="@dimen/view_padding7"
+                    android:layout_height="@dimen/view_padding197.5"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/view_padding18"
+                    android:background="@drawable/shape_analyse_right_rectangle" />
+
+                <com.jszf.txsystem.view.ViewPagerCompat
+                    android:id="@+id/viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/view_padding233"
+                    android:layout_centerInParent="true"></com.jszf.txsystem.view.ViewPagerCompat>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white_bg"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/analyse_text_mamount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_padding35"
+                    android:gravity="center"
+                    android:text="当月收款(单位:K元)"
+                    android:textSize="30px" />
+
+                <RelativeLayout
+                    android:id="@+id/analyse_ll_barchat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/analyse_text_mamount"
+                    android:layout_marginLeft="@dimen/view_padding15"
+                    android:layout_marginRight="@dimen/view_padding15"
+                    android:layout_marginTop="@dimen/view_padding12.5"
+                    android:background="@drawable/shape_analyse_linechart_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/linear"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/view_padding10"
+                        android:layout_marginRight="@dimen/view_padding10"
+                        android:layout_marginTop="@dimen/view_padding15"
+                        android:gravity="center"
+                        android:orientation="horizontal"></LinearLayout>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

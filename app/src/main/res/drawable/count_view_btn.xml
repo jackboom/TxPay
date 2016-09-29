@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 连框颜色值 -->
+    <item android:state_pressed="false"><shape>
+            <solid android:color="@color/white" />  <!-- 设置主体背景颜色 -->
+            <!--<padding android:bottom="@dimen/view_padding1" android:left="@dimen/view_padding1" android:right="@dimen/view_padding1" android:top="@dimen/view_padding1" />-->
+        </shape></item>
+    <!-- 按下去主体背景颜色值 -->
+    <item android:state_pressed="true"><shape>
+            <solid android:color="@color/bg_btn_press2" />
+        </shape></item>
+
+</selector>

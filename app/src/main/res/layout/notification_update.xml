@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:id="@+id/ll_content"
+              android:gravity="center"
+    android:background="@color/white_light"
+              android:layout_height="match_parent"
+             >
+    <ImageView
+        android:scaleY="0.8"
+        android:scaleX="0.8"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_notification"
+        android:id="@+id/img_menu"
+        />
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:textColor="@color/actionsheet_gray"
+            android:id="@+id/tv_name"
+            android:text="同兴支付"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ProgressBar
+            android:layout_below="@id/tv_name"
+            android:id="@+id/progressBar"
+            android:max="100"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textColor="@color/actionsheet_gray"
+            android:layout_below="@id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_info"
+
+            />
+    </RelativeLayout>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:background="@null"
+        android:id="@+id/ib_close"
+        />
+
+</LinearLayout>

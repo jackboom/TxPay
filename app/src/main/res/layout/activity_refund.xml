@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_light"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.jszf.txsystem.activity.RefundActivity">
+    <RelativeLayout
+        android:id="@+id/rl_bill_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45"
+        android:layout_weight="0"
+        android:background="@color/statusBar"
+        >
+
+        <ImageView
+            android:background="@drawable/selector_bg_back"
+
+            android:paddingRight="@dimen/view_padding10"
+            android:id="@+id/iv_refund_back"
+            android:layout_width="@dimen/view_padding50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/view_padding10"
+            android:clickable="true"
+            android:src="@drawable/pay_icon_back"/>
+
+        <TextView
+            android:id="@+id/tv_bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_padding10"
+            android:layout_toRightOf="@id/iv_refund_back"
+            android:text="申请退款"
+            android:textColor="@color/text_home_title"
+            android:textSize="@dimen/view_padding25"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:background="@color/white_light"
+                android:gravity="bottom"
+                style="@style/billdetail_layout_1" >
+                <TextView
+                    android:layout_marginBottom="@dimen/view_padding5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="退款金额："
+                    android:textSize="@dimen/view_padding14"/>
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center_vertical"
+                style="@style/billdetail_layout_1" >
+                <EditText
+                    android:digits="0123456789."
+                    android:inputType="numberDecimal"
+                    android:singleLine="true"
+                    android:id="@+id/edt_refund_refundAmount"
+                    android:layout_marginRight="@dimen/view_padding40"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/view_padding18"/>
+            </LinearLayout>  <LinearLayout
+            android:background="@color/white_light"
+            android:gravity="bottom"
+            style="@style/billdetail_layout_1" >
+            <TextView
+                android:layout_marginBottom="@dimen/view_padding5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="退款说明："
+                android:textSize="@dimen/view_padding14"/>
+        </LinearLayout>  <LinearLayout
+            style="@style/billdetail_layout_1" >
+            <EditText
+                android:id="@+id/edt_refund_explanation"
+                android:layout_marginRight="@dimen/view_padding30"
+                android:hint="请输入退款说明(1~10字)"
+                android:background="@null"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="@dimen/view_padding18"/>
+        </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:layout_marginLeft="@dimen/view_padding25"
+                android:layout_marginRight="@dimen/view_padding25"
+                android:layout_weight="0"
+                android:id="@+id/btn_refund_submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/view_padding20"
+                android:text="提交申请"
+                android:background="@color/darker_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/scan_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context="com.jszf.txsystem.activity.ScanInputActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/view_padding5"
+            android:text="@string/text_scan_title"
+            android:textColor="@color/text_scan_amount"
+            android:textSize="@dimen/view_padding25"
+            />
+        <LinearLayout
+            android:id="@+id/ll_scan_amount"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="@color/text_scan_amount"
+                android:textSize="@dimen/view_padding36"
+                android:gravity="center"
+                android:text="@string/text_pay_moneySign"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_scan_amount"
+                android:textColor="@color/text_scan_amount"
+                android:textSize="@dimen/view_padding40"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_below="@id/ll_scan_amount"
+            android:src="@drawable/scan_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            style="@style/layout_scan_linear"
+        >
+
+            <ImageView
+                android:id="@+id/img_scan_one"
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_scan_one"/>
+
+            <ImageView
+                android:id="@+id/img_scan_two"
+
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_scan_two"/>
+
+            <ImageView
+                android:id="@+id/img_scan_three"
+
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_scan_three"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                android:id="@+id/img_scan_four"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_scan_four"/>
+
+            <ImageView
+                android:id="@+id/img_scan_five"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_scan_five"/>
+
+            <ImageView
+                android:id="@+id/img_scan_six"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_scan_six"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_seven"
+
+                android:src="@drawable/selector_scan_seven"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_eight"
+
+                android:src="@drawable/selector_scan_eight"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_nine"
+
+                android:src="@drawable/selector_scan_nine"/>
+        </LinearLayout>
+
+        <LinearLayout
+          style="@style/layout_scan_linear">
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_point"
+
+                android:src="@drawable/selector_scan_point"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_zero"
+                android:src="@drawable/selector_scan_zero"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/img_scan_back"
+                android:src="@drawable/selector_scan_delete"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                android:id="@+id/img_scan_xiala"
+                style="@style/layout_scan_img"
+                android:layout_weight="1.8"
+                android:src="@drawable/scan_icon_xiala"/>
+
+            <ImageView
+                android:id="@+id/img_scan_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/scan_icon_bt"/>
+
+            <ImageView
+                android:id="@+id/img_scan_chongzhi"
+                style="@style/layout_scan_img"
+                android:layout_weight="1.8"
+                android:src="@drawable/scan_icon_chongzhi"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

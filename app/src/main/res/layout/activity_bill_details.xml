@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jszf.txsystem.activity.BillDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/rl_bill_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45"
+        android:layout_weight="0"
+        android:background="@color/statusBar">
+
+        <ImageView
+            android:id="@+id/iv_billdetail_back"
+
+            android:layout_width="@dimen/view_padding50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bg_back"
+            android:clickable="true"
+            android:paddingLeft="@dimen/view_padding10"
+            android:paddingRight="@dimen/view_padding10"
+            android:src="@drawable/pay_icon_back" />
+
+        <TextView
+            android:id="@+id/tv_bill_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/view_padding10"
+            android:layout_toRightOf="@id/iv_billdetail_back"
+            android:text="账单详情"
+            android:textColor="@color/text_home_title"
+            android:textSize="@dimen/view_padding25" />
+
+        <TextView
+            android:id="@+id/tv_billdetail_refund"
+            android:layout_width="@dimen/view_padding60"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingRight="@dimen/view_padding10"
+            android:text="退款"
+            android:textColor="@color/text_home_title"
+            android:textSize="@dimen/view_padding22.5" />
+    </RelativeLayout>
+    <com.jszf.txsystem.ui.FlexibleScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/view_padding8">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_padding40"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="账号信息"
+                        android:textSize="@dimen/view_padding12.5" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="商户号:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_merchanno"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="订单号:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_morderno"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="同兴号:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_txorderno"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/billdetail_layout_1"
+                    android:layout_weight="0"
+                    android:gravity="clip_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="银行卡号:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_card"
+                        style="@style/myself_text1"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_padding40"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="订单状态"
+                        android:textSize="@dimen/view_padding12.5" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="支付通道:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_paychannel"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="订单状态:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_status"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="支付时间:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_paytime"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ll_refund"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="4"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="gone">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/viewfinder_mask" />-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/billdetail_layout_1"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/myself_text1"-->
+                        <!--android:text="商户退款流水号:  " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_billdetail_mRefundNo"-->
+                        <!--style="@style/myself_text1" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout-->
+                    <!--style="@style/billdetail_layout_1"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/myself_text1"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="同兴退款流水号:  " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_billdetail_txRefundNo"-->
+                        <!--style="@style/myself_text1" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout style="@style/billdetail_layout_1">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/myself_text1"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="退款申请时间:  " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_billdetail_refundTime"-->
+                        <!--style="@style/myself_text1" />-->
+                <!--</LinearLayout>-->
+
+                <!--<LinearLayout style="@style/billdetail_layout_1">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/myself_text1"-->
+                        <!--android:layout_centerVertical="true"-->
+                        <!--android:text="退款完成时间:  " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/tv_billdetail_refundDealTime"-->
+                        <!--style="@style/myself_text1" />-->
+                <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_padding40"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="产品信息"
+                        android:textSize="@dimen/view_padding12.5" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="产品名称:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_productname"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="支付金额:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_payamount"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_refundAmount"
+                    style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="退款金额:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_refundAmount"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_refundAmountCount"
+                    style="@style/billdetail_layout_1"
+                    >
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="退款次数:  "
+                        />
+                    <TextView
+                        android:id="@+id/tv_billdetail_refundAmountCount"
+                        style="@style/myself_text1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/view_padding8">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/view_padding40"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="附加信息"
+                        android:textSize="@dimen/view_padding12.5" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="ext1:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_ext1"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/billdetail_layout_1">
+
+                    <TextView
+                        style="@style/myself_text1"
+                        android:layout_centerVertical="true"
+                        android:text="ext2:  " />
+
+                    <TextView
+                        android:id="@+id/tv_billdetail_ext2"
+                        style="@style/myself_text1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.jszf.txsystem.ui.FlexibleScrollView>
+
+
+</LinearLayout>

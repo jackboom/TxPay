@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="24px"
+        android:layout_marginRight="24px"
+        android:layout_marginTop="37px"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            >
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="7"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_analyse_week0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day0"
+                android:text="TUE"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="8"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_analyse_week1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day1"
+                android:text="TUE"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="9"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_analyse_week2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day2"
+                android:text="WED"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="10"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"
+                />
+
+            <TextView
+                android:id="@+id/tv_analyse_week3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day3"
+                android:text="THU"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="11"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"
+                />
+
+            <TextView
+                android:id="@+id/tv_analyse_week4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day4"
+                android:text="FRI"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="12"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"
+                />
+
+            <TextView
+                android:id="@+id/tv_analyse_week5"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day5"
+                android:text="SAT"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <com.jszf.txsystem.view.CustomTextView
+                android:id="@+id/tv_analyse_day6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="13"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="28px"/>
+
+            <TextView
+                android:id="@+id/tv_analyse_week6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="4px"
+                android:layout_toRightOf="@id/tv_analyse_day6"
+                android:text="SUN"
+                android:textColor="@color/analyse_month_amount"
+                android:textSize="18px"
+
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="2px"
+        android:layout_marginLeft="26px"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="38px"
+                android:background="@drawable/shape_analyse_line"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="37px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="35px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="35px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="35px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="32px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="2px"
+                android:layout_height="400px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/shape_analyse_line"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

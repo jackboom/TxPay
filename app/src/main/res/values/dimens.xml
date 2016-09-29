@@ -1,0 +1,131 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="list_item_elevation">2dp</dimen>
+    <dimen name="list_item_height">64dp</dimen>
+    <dimen name="list_item2_height">96dp</dimen>
+    <dimen name="list_group_item_height">96dp</dimen>
+    <dimen name="list_group_item_with_add_remove_buttons_height">108dp</dimen>
+
+    <!--<dimen name="view_padding1">1dp</dimen>-->
+    <!--<dimen name="view_padding2">2dp</dimen>-->
+    <!--<dimen name="view_padding5">5dp</dimen>-->
+    <!--<dimen name="view_padding10">10dp</dimen>-->
+    <!--<dimen name="view_padding15">15dp</dimen>-->
+    <!--<dimen name="view_padding20">20dp</dimen>-->
+    <!--<dimen name="view_padding25">25dp</dimen>-->
+    <!--<dimen name="view_padding30">30dp</dimen>-->
+    <!--<dimen name="view_padding35">35dp</dimen>-->
+    <!--<dimen name="view_padding40">40dp</dimen>-->
+    <!--<dimen name="view_padding45">45dp</dimen>-->
+    <!--<dimen name="view_padding50">50dp</dimen>-->
+    <!--<dimen name="view_padding60">60dp</dimen>-->
+    <!--<dimen name="view_padding65">65dp</dimen>-->
+    <!--<dimen name="view_padding70">70dp</dimen>-->
+    <!--<dimen name="view_padding80">80dp</dimen>-->
+    <!--<dimen name="view_padding85">85dp</dimen>-->
+    <!--<dimen name="view_padding102">102dp</dimen>-->
+    <!--<dimen name="view_padding115">115dp</dimen>-->
+    <!--<dimen name="view_padding137.5">137.5dp</dimen>-->
+
+    <!--&lt;!&ndash;button&ndash;&gt;-->
+    <!--<dimen name="view_btn_pidding0">0dp</dimen>-->
+    <!--<dimen name="view_btn_pidding5">-5dp</dimen>-->
+    <!--<dimen name="view_btn_pidding10">-10dp</dimen>-->
+    <!--<dimen name="view_btn_pidding15">-15dp</dimen>-->
+    <!--<dimen name="view_btn_pidding20">-20dp</dimen>-->
+    <!--<dimen name="view_btn_pidding30">-30dp</dimen>-->
+    <!--<dimen name="view_btn_pidding50">-50dp</dimen>-->
+    <!--<dimen name="view_btn_pidding100">-100dp</dimen>-->
+    <!--<dimen name="view_btn_pidding150">-150dp</dimen>-->
+    <!--<dimen name="view_btn_pidding175">-175dp</dimen>-->
+    <!--<dimen name="view_btn_pidding200">-200dp</dimen>-->
+    <!--&lt;!&ndash;login.xml button&ndash;&gt;-->
+    <!--<dimen name="login_button">55dp</dimen>-->
+    <!--<dimen name="pie_chart_text1_size">42sp</dimen>-->
+    <!--<dimen name="pie_chart_text2_size">16dp</dimen>-->
+    <!--<dimen name="text_home1">16sp</dimen>-->
+    <!--<dimen name="text_home2">32sp</dimen>-->
+    <!--<dimen name="historyscore_tb">10dp</dimen>-->
+    <dimen name="view_padding16sp">16sp</dimen>
+
+    <dimen name="view_padding0.5">0.5px</dimen>
+    <dimen name="view_padding1">2px</dimen>
+    <dimen name="view_padding2">4px</dimen>
+    <dimen name="view_padding5">10px</dimen>
+    <dimen name="view_padding7">14px</dimen>
+    <dimen name="view_padding8">16px</dimen>
+    <dimen name="view_padding10">20px</dimen>
+    <dimen name="view_padding12.5">25px</dimen>
+    <dimen name="view_padding14">28px</dimen>
+    <dimen name="view_padding15">30px</dimen>
+    <dimen name="view_padding16">32px</dimen>
+    <dimen name="view_padding18">36px</dimen>
+    <dimen name="view_padding20">40px</dimen>
+    <dimen name="view_padding22.5">45px</dimen>
+    <dimen name="view_padding23.5">47px</dimen>
+    <dimen name="view_padding25">50px</dimen>
+    <dimen name="view_padding27">54px</dimen>
+    <dimen name="view_padding30">60px</dimen>
+    <dimen name="view_padding32">64px</dimen>
+    <dimen name="view_padding35">70px</dimen>
+    <dimen name="view_padding36">72px</dimen>
+    <dimen name="view_padding40">80px</dimen>
+    <dimen name="view_padding42.5">85px</dimen>
+    <dimen name="view_padding44">88px</dimen>
+    <dimen name="view_padding45">90px</dimen>
+    <dimen name="view_padding50">100px</dimen>
+    <dimen name="view_padding55">110px</dimen>
+    <dimen name="view_padding58">116px</dimen>
+    <dimen name="view_padding60">120px</dimen>
+    <dimen name="view_padding64">128px</dimen>
+    <dimen name="view_padding65">130px</dimen>
+    <dimen name="view_padding70">140px</dimen>
+    <dimen name="view_padding80">160px</dimen>
+    <dimen name="view_padding85">170px</dimen>
+    <dimen name="view_padding90">180px</dimen>
+    <dimen name="view_padding89">178px</dimen>
+    <dimen name="view_padding95">190px</dimen>
+    <dimen name="view_padding100">200px</dimen>
+    <dimen name="view_padding102">204px</dimen>
+    <dimen name="view_padding105">210px</dimen>
+    <dimen name="view_padding110">220px</dimen>
+    <dimen name="view_padding115">230px</dimen>
+    <dimen name="view_padding130">260px</dimen>
+    <dimen name="view_padding135">270px</dimen>
+    <dimen name="view_padding137.5">275px</dimen>
+    <dimen name="view_padding150">300px</dimen>
+    <dimen name="view_padding155">310px</dimen>
+    <dimen name="view_padding197.5">395px</dimen>
+    <dimen name="view_padding197">394px</dimen>
+    <dimen name="view_padding220">440px</dimen>
+    <dimen name="view_padding233">466px</dimen>
+    <dimen name="view_padding240">480px</dimen>
+    <dimen name="view_padding250">500px</dimen>
+    <dimen name="view_padding260">520px</dimen>
+
+    <!--button-->
+    <dimen name="view_btn_pidding0">0dp</dimen>
+    <dimen name="view_pidding8">-8dp</dimen>
+    <dimen name="view_btn_pidding5">-10px</dimen>
+    <dimen name="view_btn_pidding10">-20px</dimen>
+    <dimen name="view_btn_pidding15">-30px</dimen>
+    <dimen name="view_btn_pidding20">-40px</dimen>
+    <dimen name="view_btn_pidding30">-60px</dimen>
+    <dimen name="view_btn_pidding50">-100px</dimen>
+    <dimen name="view_btn_pidding100">-200px</dimen>
+    <dimen name="view_btn_pidding150">-300px</dimen>
+    <dimen name="view_btn_pidding175">-350px</dimen>
+    <dimen name="view_btn_pidding200">-400px</dimen>
+    <!--login.xml button-->
+    <dimen name="login_button">110px</dimen>
+    <dimen name="pie_chart_text1_size">84px</dimen>
+    <dimen name="pie_chart_text2_size">32px</dimen>
+    <dimen name="text_home1">32px</dimen>
+    <dimen name="text_home2">64px</dimen>
+    <dimen name="historyscore_tb">10dp</dimen>
+
+
+</resources>

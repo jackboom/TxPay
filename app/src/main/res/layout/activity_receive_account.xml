@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_light"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.jszf.txsystem.activity.ReceiveAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45"
+        android:layout_weight="0"
+        android:background="@color/statusBar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_receive_back"
+            android:layout_width="@dimen/view_padding50"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_bg_back"
+            android:clickable="true"
+            android:paddingLeft="@dimen/view_padding10"
+            android:paddingRight="@dimen/view_padding10"
+            android:src="@drawable/pay_icon_back" />
+
+        <TextView
+            style="@style/home_text1"
+            android:layout_centerInParent="true"
+            android:text="到账查询"
+            android:textSize="@dimen/view_padding25" />
+    </RelativeLayout>
+    <!--<com.jszf.txsystem.view.custom_recycleview.recycleview.SuperRecyclerView-->
+    <!--android:id="@+id/recycleView_settle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:scrollbars="none"-->
+    <!--android:layout_height="match_parent">-->
+    <!--</com.jszf.txsystem.view.custom_recycleview.recycleview.SuperRecyclerView>-->
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/frame_recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_settle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" />
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+    <!--<com.chanven.lib.cptr.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/frame_recycleView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#f0f0f0"-->
+        <!--cube_ptr:ptr_duration_to_close="200"-->
+        <!--cube_ptr:ptr_duration_to_close_header="700"-->
+        <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+        <!--cube_ptr:ptr_pull_to_fresh="false"-->
+        <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+        <!--cube_ptr:ptr_resistance="1.8">-->
+
+        <!--<android.support.v7.widget.RecyclerView-->
+            <!--android:id="@+id/recycleView_settle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@android:color/white" />-->
+    <!--</com.chanven.lib.cptr.PtrClassicFrameLayout>-->
+
+    <!--<com.chanven.lib.cptr.PtrClassicFrameLayout-->
+    <!--android:id="@+id/frame_recycleView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="#f0f0f0"-->
+    <!--cube_ptr:ptr_duration_to_close="200"-->
+    <!--cube_ptr:ptr_duration_to_close_header="1000"-->
+    <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+    <!--cube_ptr:ptr_pull_to_fresh="true"-->
+    <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+    <!--cube_ptr:ptr_resistance="1.7">-->
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recycleView_settle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/white"-->
+    <!--android:choiceMode="singleChoice"-->
+    <!--android:divider="#b0b0b0"-->
+    <!--android:dividerHeight="0.1dp"-->
+    <!--android:fadingEdge="none"-->
+    <!--android:scrollbarStyle="outsideOverlay" />-->
+    <!--</com.chanven.lib.cptr.PtrClassicFrameLayout>-->
+
+</LinearLayout>

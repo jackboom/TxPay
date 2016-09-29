@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    tools:context="com.jszf.txsystem.activity.PeriodAndRatectivity">
+    <RelativeLayout
+        android:id="@+id/rl_bill_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_padding45"
+        android:layout_weight="0"
+        android:background="@color/statusBar"
+        >
+
+        <ImageView
+            android:background="@drawable/selector_bg_back"
+
+            android:id="@+id/iv_rate_back"
+            android:layout_width="@dimen/view_padding45"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/view_padding10"
+            android:paddingRight="@dimen/view_padding10"
+            android:clickable="true"
+            android:src="@drawable/pay_icon_back"/>
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_rate_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="周期与费率"
+            android:textColor="@color/text_home_title"
+            android:textSize="@dimen/view_padding25"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_weight="11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycleView_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</LinearLayout>

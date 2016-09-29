@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pay_bg"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/pay_wechat_bg"
+    tools:context="com.jszf.txsystem.activity.PayActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.5"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_padding45">
+            <ImageView
+                android:src="@drawable/pay_icon_back"
+                android:id="@+id/iv_pay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/view_padding5"
+                android:text="@string/text_scan_title"
+                android:textColor="@color/text_scan_amount"
+                android:textSize="@dimen/view_padding25"
+                />
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/ll_scan_amount"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/text_scan_amount"
+                    android:textSize="@dimen/view_padding36"
+                    android:gravity="center"
+                    android:text="@string/text_pay_moneySign"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tv_pay_amount"
+                    android:textColor="@color/text_scan_amount"
+                    android:textSize="@dimen/view_padding40"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_below="@id/ll_scan_amount"
+                android:src="@drawable/scan_line"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            style="@style/layout_scan_linear"
+            >
+
+            <ImageView
+                android:id="@+id/iv_pay_one"
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_pay_wechat_1"/>
+
+            <ImageView
+                android:id="@+id/iv_pay_two"
+
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_pay_wechat_2"/>
+
+            <ImageView
+                android:id="@+id/iv_pay_three"
+
+                style="@style/layout_scan_img"
+                android:src="@drawable/selector_pay_wechat_3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                android:id="@+id/iv_pay_four"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_pay_wechat_4"/>
+
+            <ImageView
+                android:id="@+id/img_pay_five"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_pay_wechat_5"/>
+
+            <ImageView
+                android:id="@+id/iv_pay_six"
+
+                style="@style/layout_scan_img"
+
+                android:src="@drawable/selector_pay_wechat_6"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_seven"
+
+                android:src="@drawable/selector_pay_wechat_7"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_eight"
+
+                android:src="@drawable/selector_pay_wechat_8"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_nine"
+
+                android:src="@drawable/selector_pay_wechat_9"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_point"
+
+                android:src="@drawable/selector_pay_wechat_point"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_zero"
+                android:src="@drawable/selector_pay_wechat_0"/>
+
+            <ImageView
+                style="@style/layout_scan_img"
+                android:id="@+id/iv_pay_delete"
+                android:src="@drawable/pay_wechat_delete"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/layout_scan_linear">
+
+            <ImageView
+                android:scaleX="0.9"
+                android:scaleY="0.9"
+                android:id="@+id/iv_pay_submit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector_pay_weichat"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

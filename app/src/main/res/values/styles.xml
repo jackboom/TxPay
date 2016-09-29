@@ -1,0 +1,305 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="ImageTranslucentTheme" parent="AppTheme">
+        <!--在Android 4.4之前的版本上运行，直接跟随系统主题-->
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <item name="android:colorPrimary">@color/statusBar</item>
+        <item name="colorPrimaryDark">@color/statusBar</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="layout_common1">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="layout_mylayout" parent="layout_common1">
+        <item name="android:background">@drawable/count_view_btn</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="shift_layout" parent="layout_mylayout">
+        <item name="android:background">@drawable/count_view_btn</item>
+    </style>
+
+    <style name="layout_mylayout2" parent="layout_mylayout">
+        <item name="android:background">@drawable/count_view_btn</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">@dimen/view_padding55</item>
+
+    </style>
+
+    <style name="layout_mylayout_myself" parent="layout_mylayout">
+        <item name="android:layout_height">80px</item>
+    </style>
+
+    <style name="layout_common2" parent="layout_common1">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="layout_calculator" parent="layout_common2">
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <!--<item name="android:layout_marginLeft">0.5dp</item>-->
+    </style>
+
+    <style name="home_text1">
+        <item name="android:textColor">@color/main_text_each_amount</item>
+        <item name="android:textSize">@dimen/view_padding16</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="home_text2" parent="home_text1">
+        <item name="android:textSize">@dimen/view_padding32</item>
+    </style>
+
+    <style name="shift_text" parent="home_text1">
+        <item name="android:textSize">@dimen/view_padding18</item>
+        <item name="android:textColor">@color/viewfinder_mask</item>
+    </style>
+
+    <style name="myself_text1" parent="home_text1">
+        <item name="android:textColor">@color/viewfinder_mask</item>
+        <item name="android:textSize">@dimen/view_padding20</item>
+    </style>
+
+    <style name="billdetail_layout_1" parent="layout_common1">
+        <item name="android:layout_height">@dimen/view_padding55</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/view_padding8</item>
+        <item name="android:layout_marginTop">@dimen/view_padding1</item>
+    </style>
+
+    <style name="billdetail_layout_myself" parent="layout_mylayout">
+        <item name="android:layout_height">@dimen/view_padding55</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/view_padding8</item>
+        <item name="android:layout_marginTop">@dimen/view_padding1</item>
+    </style>
+
+    <style name="billdetail_layout_2" parent="layout_common1">
+
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">@dimen/view_padding8</item>
+        <item name="android:layout_marginTop">@dimen/view_padding1</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/inuptodown2</item>
+        <item name="android:windowExitAnimation">@anim/outdowntoup2</item>
+    </style>
+    <!-- 选项描边 -->
+    <style name="stroke">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/stroke</item>
+    </style>
+
+    <style name="stroke1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/stroke</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <!-- 设置默认dialog样式 -->
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="dialogActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--<item name="android:windowFrame">@dimen/view_padding10</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:background">@color/white_light</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Theme.Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="dialog_style" parent="@style/Base.Theme.AppCompat.Light.Dialog.MinWidth">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+
+    <style name="layout_scan_linear">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="layout_scan_img" parent="layout_scan_linear">
+        <item name="android:scaleX">0.8</item>
+        <item name="android:scaleY">0.8</item>
+    </style>
+
+    <style name="PromptDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <!--  自定义仿IOS的AlertDialog的样式
+  -->
+    -
+
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    - <!--  自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果
+  -->
+    -
+
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+        - <!--  背景透明
+  -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        - <!--  浮于Activity之上
+  -->
+        <item name="android:windowIsFloating">true</item>
+        - <!--  边框
+  -->
+        <item name="android:windowFrame">@null</item>
+        - <!--  Dialog以外的区域模糊效果
+  -->
+        <item name="android:backgroundDimEnabled">true</item>
+        - <!--  无标题
+  -->
+        <item name="android:windowNoTitle">true</item>
+        - <!--  半透明
+  -->
+        <item name="android:windowIsTranslucent">true</item>
+        - <!--  Dialog进入及退出动画
+  -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+    - <!--  ActionSheet进出动画
+  -->
+    -
+
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_background</item>
+    </style>
+
+    -
+
+    <style name="myRecyclerViewStyle">
+        - <!--  NOTE: clipChildren should be true on API level 10
+  -->
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="commonListItemStyle" />
+    <declare-styleable name="AVLoadingIndicatorView">
+        - <attr name="indicator">
+        <flag name="BallPulse" value="0" />
+        <flag name="BallGridPulse" value="1" />
+        <flag name="BallClipRotate" value="2" />
+        <flag name="BallClipRotatePulse" value="3" />
+        <flag name="SquareSpin" value="4" />
+        <flag name="BallClipRotateMultiple" value="5" />
+        <flag name="BallPulseRise" value="6" />
+        <flag name="BallRotate" value="7" />
+        <flag name="CubeTransition" value="8" />
+        <flag name="BallZigZag" value="9" />
+        <flag name="BallZigZagDeflect" value="10" />
+        <flag name="BallTrianglePath" value="11" />
+        <flag name="BallScale" value="12" />
+        <flag name="LineScale" value="13" />
+        <flag name="LineScaleParty" value="14" />
+        <flag name="BallScaleMultiple" value="15" />
+        <flag name="BallPulseSync" value="16" />
+        <flag name="BallBeat" value="17" />
+        <flag name="LineScalePulseOut" value="18" />
+        <flag name="LineScalePulseOutRapid" value="19" />
+        <flag name="BallScaleRipple" value="20" />
+        <flag name="BallScaleRippleMultiple" value="21" />
+        <flag name="BallSpinFadeLoader" value="22" />
+        <flag name="LineSpinFadeLoader" value="23" />
+        <flag name="TriangleSkewSpin" value="24" />
+        <flag name="Pacman" value="25" />
+        <flag name="BallGridBeat" value="26" />
+        <flag name="SemiCircleSpin" value="27" />
+    </attr>
+        <attr name="indicator_color" format="color" />
+    </declare-styleable>
+    - <!--  end
+  -->
+    - <!-- swipeMenu
+  -->
+    - <declare-styleable name="SwipeMenu">
+    <attr name="anim_duration" format="integer" />
+</declare-styleable>
+
+
+</resources>
